@@ -1,6 +1,5 @@
 '''
 Dhruti Vadlamudi
-Period 4
 Spell Checker Project
 '''
 
