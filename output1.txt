@@ -1,0 +1,20 @@
+Dictionary: Essay to check: Time to spellcheck: 3.672
+Misspelled Words:
+      civalized:  line:   1   word:  3
+   oportunities:  line:   6   word:  4
+         seeems:  line:  15   word:  9
+          peopl:  line:  21   word:  8
+      ettiquitt:  line:  35   word:  1
+         shoudl:  line:  37   word:  7
+     psudo-code:  line:  37   word: 10
+      algorythm:  line:  39   word:  6
+
+Suggested Corrections:
+civalized       -> civilized
+oportunities    -> opportunities
+seeems          -> seems
+peopl           -> people
+ettiquitt       -> antiquist, antiquity, etiquet, etiquette
+shoudl          -> dhoul, ghoul, seoul, shaul, shoad, shoal, shod, shoddy, shode, shoed, shoful, shonde, shood, shool, shorl, shou, shough, should, shouldn, shouse, shout, shouts, shoval, shovel, showd, shroud, shrouds, shroudy, shul, soud, soul
+psudo-code      -> pseudo-code, psuedo-code
+algorythm       -> algorithm

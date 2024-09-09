@@ -1,0 +1,85 @@
+.........E.....EEE
+======================================================================
+ERROR: test_spell_check_essay (test_spell_checker.TestSpellChecker)
+#name([Behavior: Common Case] SpellCheck the essay, no suggestions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\jstride\Documents\IDP 2023-24\Students\HW6\1120875\test\test_spell_checker.py", line 53, in test_spell_check_essay
+    wi_actual = TestSpellChecker._sp_full.spell_check('data/englishEssay.txt', False)
+TypeError: spell_check() takes 2 positional arguments but 3 were given
+
+======================================================================
+ERROR: test_check_essay_speed_not_garbage (test_spell_checker_perf.TestPerformance)
+#name([Behavior: Common Case] Test the speed of spell_check englishEssay, no suggestions, lenient)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\jstride\Documents\IDP 2023-24\Students\HW6\1120875\test\test_spell_checker_perf.py", line 64, in test_check_essay_speed_not_garbage
+    func_timeout(1.0, spell_check_quick2)
+  File "C:\Users\jstride\.conda\envs\cse163\lib\site-packages\func_timeout\dafunc.py", line 108, in func_timeout
+    raise_exception(exception)
+  File "C:\Users\jstride\.conda\envs\cse163\lib\site-packages\func_timeout\py3_raise.py", line 7, in raise_exception
+    raise exception[0] from None
+  File "C:\Users\jstride\Documents\IDP 2023-24\Students\HW6\1120875\test\test_spell_checker_perf.py", line 61, in spell_check_quick2
+    self._sp_full.spell_check('data/englishEssay.txt', False)
+TypeError: spell_check() takes 2 positional arguments but 3 were given
+
+======================================================================
+ERROR: test_check_essay_speed_okay (test_spell_checker_perf.TestPerformance)
+#name([Behavior: Common Case] Test the speed of spell_check englishEssay, no suggestions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\jstride\Documents\IDP 2023-24\Students\HW6\1120875\test\test_spell_checker_perf.py", line 50, in test_check_essay_speed_okay
+    func_timeout(0.05, spell_check_quick)
+  File "C:\Users\jstride\.conda\envs\cse163\lib\site-packages\func_timeout\dafunc.py", line 108, in func_timeout
+    raise_exception(exception)
+  File "C:\Users\jstride\.conda\envs\cse163\lib\site-packages\func_timeout\py3_raise.py", line 7, in raise_exception
+    raise exception[0] from None
+  File "C:\Users\jstride\Documents\IDP 2023-24\Students\HW6\1120875\test\test_spell_checker_perf.py", line 47, in spell_check_quick
+    self._sp_full.spell_check('data/englishEssay.txt', False)
+TypeError: spell_check() takes 2 positional arguments but 3 were given
+
+======================================================================
+ERROR: test_suggest_corrections_speed (test_spell_checker_perf.TestPerformance)
+#name([Behavior: Common Case] Spell Check essay with suggestions quickly)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\jstride\Documents\IDP 2023-24\Students\HW6\1120875\test\test_spell_checker_perf.py", line 36, in test_suggest_corrections_speed
+    func_timeout(8, spell_check_essay)
+  File "C:\Users\jstride\.conda\envs\cse163\lib\site-packages\func_timeout\dafunc.py", line 108, in func_timeout
+    raise_exception(exception)
+  File "C:\Users\jstride\.conda\envs\cse163\lib\site-packages\func_timeout\py3_raise.py", line 7, in raise_exception
+    raise exception[0] from None
+  File "C:\Users\jstride\Documents\IDP 2023-24\Students\HW6\1120875\test\test_spell_checker_perf.py", line 30, in spell_check_essay
+    wi_actual = self._sp_full.spell_check('data/englishEssay.txt', True)
+TypeError: spell_check() takes 2 positional arguments but 3 were given
+
+----------------------------------------------------------------------
+Ran 18 tests in 5.835s
+
+FAILED (errors=4)
+[Behavior: Common Case] One hyphen in the word, left-right are both misspelled
+[Behavior: Small Case] Spell check smallEssay.txt
+[Behavior: Common Case] Test the speed of spell_check englishEssay words-allow slower
+[Behavior: Challenge Case] Multiple hyphens in the word
+[Behavior: Common Case] Find correctly spelled hyphenated words, only 1 side
+[Behavior: Common Case] Generate insert_letters
+[Behavior: Small Case] find misspelled words
+[Behavior: Small Case] Generate remove_letters on 'actually'
+[Behavior: Small Case] Suggestion for 'jick'
+[Behavior: Common Case] SpellCheck the essay, no suggestions
+[Behavior: Common Case] Find correctly mis-misspelled words
+[Behavior: Common Case] Find correctly spelled words in non-hyphens
+Full Suggest Corrections Time = 1.1100232601165771
+[Behavior: Common Case] Find only 6 mis-misspelled words
+[Behavior: Common Case] Find correctly spelled words for psudo-code
+[Behavior: Common Case] Generate swapped_letters
+[Behavior: Common Case] Test the speed of spell_check englishEssay, no suggestions, lenient
+[Behavior: Common Case] Test the speed of spell_check englishEssay, no suggestions
+[Behavior: Common Case] Spell Check essay with suggestions quickly
+Ran 18 tests, PASSED=14 Failed=0, Errors=4
+Summary of Failures and Errors:
+  ERROR: [Behavior: Common Case] SpellCheck the essay, no suggestions
+  ERROR: [Behavior: Common Case] Test the speed of spell_check englishEssay, no suggestions, lenient
+  ERROR: [Behavior: Common Case] Test the speed of spell_check englishEssay, no suggestions
+  ERROR: [Behavior: Common Case] Spell Check essay with suggestions quickly
+Finished running all tests. Success: False
